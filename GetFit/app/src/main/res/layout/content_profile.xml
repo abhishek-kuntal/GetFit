@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cloud.getfit.Profile"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_weight="30">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal|center_vertical|center"
+                android:gravity="center"
+                android:layout_weight="65">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@mipmap/profile"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_weight="35">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prashant Patel"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:textColor="@android:color/white"
+                    android:textSize="25sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70">
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_basic"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:weightSum="100">
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:text="Basic Info"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="User name : prashant182"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="BirthDate : 02/18/1995"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Email : prashant.18@live.com"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Phone : +1(203)2782695"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_body_profile"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:weightSum="100">
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:text="Body Profile"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Weight : 150 LB"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Height : 5,5'"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Dietary Pref : Vegan"/>
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="20"
+                        android:textSize="15sp"
+                        android:text="Allergies : Dairey"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_maps"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="8dp"
+                card_view:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:weightSum="100"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="20">
+                        <TextView
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/holo_orange_dark"
+                            android:text="Location Info"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="80">
+                        <com.google.android.gms.maps.MapView
+                            android:id="@+id/mapView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:liteMode="true"
+                            app:mapType="normal"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

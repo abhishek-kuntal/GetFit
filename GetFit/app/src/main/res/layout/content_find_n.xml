@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cloud.getfit.findN"
+    tools:showIn="@layout/activity_find_n">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please fill the form with honest details so that we can help you connect with the right nutritionist"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Please enter your weigth:"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/weight"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/weight"
+                    android:textSize="12sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center|left"
+                android:text="LBS"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Please enter your height:"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_margin="10dp"
+                    android:id="@+id/height"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:entries="@array/Height"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center|left"
+                android:text="ft/inch"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Please enter your dietery Pref:"
+                android:layout_height="match_parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_margin="10dp"
+                    android:id="@+id/dietary_pref"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:entries="@array/diet"/>
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:text="Describe further"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_margin="15dp"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:minLines="6"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="What are your goals, limitations, be honest it will help us find better nutritionist"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="50"
+                android:layout_margin="15dp"
+                android:id="@+id/submit_request"
+                android:layout_width="wrap_content"
+                android:text="Submit"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_margin="15dp"
+                android:layout_weight="50"
+                android:id="@+id/cancel_request"
+                android:text="Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:circleview="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.cloud.getfit.UserActivityDashBoard"
+    tools:showIn="@layout/app_bar_user_activity_dash_board">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="30"
+            android:background="@mipmap/google_fit">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <TextView
+                            android:id="@+id/steps_dashboard"
+                            android:gravity="center_horizontal"
+                            android:text="27"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:text="min"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <TextView
+                            android:id="@+id/steps_walk"
+                            android:gravity="center_horizontal"
+                            android:text="3.59"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:text="km"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90">
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <TextView
+                            android:id="@+id/calories_dashboard"
+                            android:gravity="center_horizontal"
+                            android:text="1559"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:text="Calories"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="25">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="90">
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+                        <TextView
+                            android:id="@+id/dashboard_steps"
+                            android:gravity="center_horizontal"
+                            android:text="2200"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <TextView
+                            android:text="Steps"
+                            android:gravity="center_horizontal"
+                            android:textSize="20sp"
+                            android:textColor="#FFFFFF"
+                            android:layout_gravity="bottom"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="70">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="33">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    xmlns:custom="http://schemas.android.com/apk/res-auto"
+
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <rjsv.circularview.CircleView
+                            android:id="@+id/water_tracker"
+                            android:layout_margin="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            circleview:arcWidth="6dp"
+                            circleview:arcHasBorder="false"
+                            circleview:progressWidth="15dp"
+                            circleview:layout_constraintTop_toTopOf="parent"
+                            circleview:layout_constraintBottom_toBottomOf="parent"
+                            circleview:layout_constraintStart_toStartOf="parent"
+                            circleview:layout_constraintEnd_toEndOf="parent"
+                            circleview:arcBorderColor="@android:color/holo_blue_bright"
+                            circleview:arcColor="#90CAF9"
+                            circleview:progressColor="#0D47A1"
+                            circleview:progressMaximumValue="100"
+                            circleview:progressMinimumValue="20"
+                            circleview:progressStepValue="1"
+                            circleview:textColor="@android:color/black"
+                            circleview:textSize="12sp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <rjsv.circularview.CircleView
+                        android:id="@+id/hear_tracker"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        circleview:arcWidth="6dp"
+                        circleview:arcHasBorder="false"
+                        circleview:progressWidth="15dp"
+                        circleview:layout_constraintTop_toTopOf="parent"
+                        circleview:layout_constraintBottom_toBottomOf="parent"
+                        circleview:layout_constraintStart_toStartOf="parent"
+                        circleview:layout_constraintEnd_toEndOf="parent"
+                        circleview:arcBorderColor="@android:color/holo_blue_bright"
+                        circleview:arcColor="#ffcdd2"
+                        circleview:progressColor="#b71c1c"
+                        circleview:progressMaximumValue="100"
+                        circleview:progressMinimumValue="20"
+                        circleview:progressStepValue="1"
+                        circleview:textColor="@android:color/black"
+                        circleview:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="33">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calories Burn Inactive"
+                        android:textSize="20sp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1800 Calories"
+                        android:textSize="40sp"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="33">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50">
+
+                    <rjsv.circularview.CircleView
+                        android:id="@+id/calories_tracker"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        circleview:arcWidth="6dp"
+                        circleview:arcHasBorder="false"
+                        circleview:progressWidth="15dp"
+                        circleview:layout_constraintTop_toTopOf="parent"
+                        circleview:layout_constraintBottom_toBottomOf="parent"
+                        circleview:layout_constraintStart_toStartOf="parent"
+                        circleview:layout_constraintEnd_toEndOf="parent"
+                        circleview:arcBorderColor="@android:color/holo_blue_bright"
+                        circleview:arcColor="#E1BEE7"
+                        circleview:progressColor="#4A148C"
+                        circleview:progressMaximumValue="100"
+                        circleview:progressMinimumValue="20"
+                        circleview:progressStepValue="1"
+                        circleview:textColor="@android:color/black"
+                        circleview:textSize="12sp"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="50">
+
+                    <rjsv.circularview.CircleView
+                        android:id="@+id/sleep_tracker"
+                        android:layout_margin="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        circleview:arcWidth="6dp"
+                        circleview:arcHasBorder="false"
+                        circleview:progressWidth="15dp"
+                        circleview:layout_constraintTop_toTopOf="parent"
+                        circleview:layout_constraintBottom_toBottomOf="parent"
+                        circleview:layout_constraintStart_toStartOf="parent"
+                        circleview:layout_constraintEnd_toEndOf="parent"
+                        circleview:arcBorderColor="@android:color/holo_blue_bright"
+                        circleview:arcColor="#FFCCBC"
+                        circleview:progressColor="#BF360C"
+                        circleview:progressMaximumValue="100"
+                        circleview:progressMinimumValue="20"
+                        circleview:progressStepValue="1"
+                        circleview:textColor="@android:color/black"
+                        circleview:textSize="12sp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

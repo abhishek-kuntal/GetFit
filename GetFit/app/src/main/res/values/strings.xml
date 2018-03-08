@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">GetFit</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="action_signup">Sign Up</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_userPassword">Password</string>
+    <string name="prompt_userPasswordRepeat">Enter Password Again</string>
+    <string name="prompt_userEmail">Email</string>
+    <string name="prompt_userFullName">Full Name</string>
+    <string name="prompt_userBirthDate">Enter Birthdate (MM/DD/YYYY)</string>
+    <string name="prompt_userPhone">Phone Number</string>
+    <string name="prompt_userAddress">Address</string>
+    <string name="title_activity_user_dash_board">UserActivityDashBoard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="typeMessage">Please type a message</string>
+    <string name="title_activity_find_n">findN</string>
+    <string name="weight">Weight</string>
+    <string name="height">height</string>
+
+    <string-array name="Height">
+        <item>5\'0\"</item>
+        <item>5\'1\"</item>
+        <item>5\'2\"</item>
+        <item>5\'3\"</item>
+        <item>5\'4\"</item>
+        <item>5\'5\"</item>
+        <item>5\'6\"</item>
+        <item>5\'7\"</item>
+        <item>5\'8\"</item>
+        <item>5\'9\"</item>
+        <item>5\'10\"</item>
+        <item>5\'11\"</item>
+        <item>6\'0\"</item>
+        <item>6\'1\"</item>
+        <item>6\'2\"</item>
+        <item>6\'3\"</item>
+        <item>6\'4\"</item>
+        <item>6\'5\"</item>
+        <item>6\'6\"</item>
+        <item>6\'7\"</item>
+    </string-array>
+
+    <string-array name="diet">
+        <item>Vegeterian</item>
+        <item>Vegan</item>
+        <item>Non-vegetarian</item>
+        <item>Glutten free</item>
+    </string-array>
+    <string name="title_activity_nutrition_expert_dash_board">NutritionExpertDashBoard</string>
+    <string name="facebook_app_id">308000316377798</string>
+    <string name="fb_login_protocol_scheme">fb308000316377798</string>
+    <string name="title_activity_sign_upamazon">SignUPAmazon</string>
+    <string name="title_activity_authenticator">AuthenticatorActivity</string>
+    <string name="app_main_desc">Login using the username and password, or you can join, it\'s free</string>
+    <string name="app_main_screen_title">GetFit</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="title_activity_new_password">NewPassword</string>
+    <string name="Menu">Menu</string>
+    <string name="title_activity_register_user">RegisterUser</string>
+
+    <string-array name="userType">
+        <item>Nutritionist</item>
+        <item>Individial</item>
+    </string-array>
+    <string name="title_activity_sign_up_confirm">SignUpConfirm</string>
+
+    <string-array name="userGender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>
